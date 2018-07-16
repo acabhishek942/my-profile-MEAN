@@ -13,9 +13,7 @@ describe('Finding records', function(){
             location: 'test Location',
             startDate: Date().now,
             endDate: Date().now,
-            tasks: [
-                'test task 1', 'test task2'
-            ]
+            tasks: [{item:'test task 1', item: 'test task2'}]
         });
         work.save().then(function(){
             assert(work.isNew === false);
