@@ -5,8 +5,9 @@ const workExperience = require('../models/work_experience');
 // Describe test
 describe('Finding records', function(){
 
+    var work;
     beforeEach(function(done){
-        var work = new workExperience({
+        work = new workExperience({
             desingnation: 'test desingnation',
             organization: 'test org',
             location: 'test Location',
@@ -26,6 +27,13 @@ describe('Finding records', function(){
     it('Finds a record from the DB', function(done){
         workExperience.findOne({desingnation: 'test desingnation'}).then(function(result){
             assert(result.desingnation === 'test desingnation');
+            done();
+        });
+    });
+
+    it('Finds a record by ID from the DB', function(done){
+        workExperience.findOne({_id: work._id}).then(function(result){
+            assert(result._id.toString() === work._id.toString());
             done();
         });
     });
