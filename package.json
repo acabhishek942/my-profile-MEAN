@@ -4,7 +4,7 @@
   "description": "web app showcasing my profile using MEAN stack",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/acabhishek942/my-profile-MEAN#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "mocha": "^5.2.0",
     "mongoose": "^5.2.3",
     "nodemon": "^1.18.2"
   }
