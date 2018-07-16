@@ -1,11 +1,20 @@
 var mongoose = require('mongoose');
 
-// connect to mongo db
+// ES6 promises
+mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/test-my-profile-MEAN');
-
-mongoose.connection.once('open', function(){
-  console.log('connection has been made  to test DB');
-}).on('error', function(err){
-  console.log('connection erroe', err);
+// connect to DB before test runs
+before(function(done){
+    // connect to mongo db
+    mongoose.connect('mongodb://localhost:27017/test-my-profile-MEAN', { useNewUrlParser: true });
+    
+    mongoose.connection.once('open', function(){
+    console.log('connection has been made  to test DB');
+    done();
+    }).on('error', function(err){
+    console.log('connection erroe', err);
+    });
 });
+
+
+
