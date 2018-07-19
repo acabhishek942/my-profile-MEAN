@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const WorkExperience = require('../models/work_experience');
+
 // get all the data from DB to the home screen
 router.get('/', function(req, res){
     // get data from DB
@@ -9,7 +11,9 @@ router.get('/', function(req, res){
 
 router.post('/work-experience', function(req, res){
     // add work experience
-    res.send({type:'POST'});
+    WorkExperience.create(req.body).then(function(data){
+        res.send(data);
+    })
 });
 
 router.post('/skills', function(req, res){

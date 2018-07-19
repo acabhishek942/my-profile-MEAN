@@ -3,16 +3,13 @@ const Schema = mongoose.Schema;
 
 // create model and schema
 
-const taskSchema = new Schema({
-    item: String
-});
 const workExperienceSchema = new Schema({
     desingnation: String,
     organization: String,
     location: String,
-    startDate: Date,
-    endDate: Date,
-    tasks: [taskSchema]
+    startDate: String,
+    endDate: String,
+    tasks: mongoose.Schema.Types.Mixed // using mixed Schema for array of string
 });
 
 const WorkExperience = mongoose.model('workExperience', workExperienceSchema);
