@@ -9,24 +9,24 @@ router.get('/', function(req, res){
     res.send({type:'GET'});
 });
 
-router.post('/work-experience', function(req, res){
+router.post('/work-experience', function(req, res, next){
     // add work experience
     WorkExperience.create(req.body).then(function(data){
         res.send(data);
-    })
+    }).catch(next);
 });
 
-router.post('/skills', function(req, res){
+router.post('/skills', function(req, res, next){
     // add skill
     res.send({type:'POST'});
 });
 
-router.post('/links', function(req, res){
+router.post('/links', function(req, res, next){
     // add a new link
     res.send({type:'POST'});
 });
 
-router.post('/interests', function(req, res){
+router.post('/interests', function(req, res, next){
     // add an interest
     res.send({type:'POST'});
 });

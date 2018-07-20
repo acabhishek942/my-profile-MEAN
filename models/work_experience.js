@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 // create model and schema
 
 const workExperienceSchema = new Schema({
-    desingnation: String,
+    desingnation: {
+        type: String,
+        required: [true, 'Designation is required']},
     organization: String,
     location: String,
     startDate: String,
