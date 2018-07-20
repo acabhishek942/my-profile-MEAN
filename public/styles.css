@@ -19,3 +19,7 @@ header {
   .tabs .tab a:focus, .tabs .tab a:focus.active{
     background: transparent;
   }
+
+  #mobile-menu .fab {
+    height: 20px;
+  }
