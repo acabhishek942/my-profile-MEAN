@@ -13,6 +13,8 @@ mongoose.Promise = global.Promise;
 // set up express app
 const myProfileApp = express();
 
+myProfileApp.use(express.static('public'));
+
 // use body-parser for handling POST requests
 myProfileApp.use(bodyParser.json());
 
