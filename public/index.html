@@ -1,95 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        <title>My Profile MEAN</title>
-    </head>
-    <body>
-  <!-- navbar -->
-  <header>
-        <nav class="nav-wrapper transparent">
-          <div class="container">
-            <a class="brand-logo black-text">My Profile</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-              <i class="material-icons black-text">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#photos" class="black-text">Work Experience</a></li>
-              <li><a href="#services" class="black-text">Skills</a></li>
-              <li><a href="#contact" class="black-text">Interests</a></li>
-              <li><a href="#" class="black-text">Resume</a></li>
-              <li>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>My Profile MEAN</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a class="brand-logo black-text">Tech Consultant</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons black-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos" class="black-text">Work Experience</a></li>
+            <li><a href="#services" class="black-text">Skills</a></li>
+            <li><a href="#contact" class="black-text">Interests</a></li>
+            <li><a href="#" class="black-text">Resume</a></li>
+            <li>
+              <a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Github">
+              <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tooltipped btn-floating btn-small blue darken-4" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Sidebar -->
+          <ul class="sidenav" id="mobile-menu">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/sidebar-background.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="img/github-avatar.jpeg"></a>
+                <a href="#name"><span class="white-text name">Abhishek Choudhary</span></a>
+                <a href="#email"><span class="white-text email">acabhishek942@gmail.com</span></a>
                 <a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Github">
-                    <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
                 </a>
-              </li>
-              <li>
-                  <a href="#" class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li>
+                <a href="#" class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                </a>
                 <a href="#" class="tooltipped btn-floating btn-small blue darken-4" data-tooltip="Facebook">
-                    <i class="fab fa-facebook"></i>
+                <i class="fab fa-facebook"></i>
                 </a>
-                </li>
-            </ul>
-            <ul class="sidenav" id="mobile-menu">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="img/sidebar-background.jpg">
-                        </div>
-                        <a href="#user"><img class="circle" src="img/github-avatar.jpeg"></a>
-                        <a href="#name"><span class="white-text name">Abhishek Choudhary</span></a>
-                        <a href="#email"><span class="white-text email">acabhishek942@gmail.com</span></a>
-                        <a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Github">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="tooltipped btn-floating btn-small blue darken-4" data-tooltip="Facebook">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                    </div>
-                </li>
-              <li><a href="#"><i class="material-icons">work</i>Work Experience</a></li>
-              <li><a href="#"><i class="material-icons">lightbulb_outline</i>Skills</a></li>
-              <li><a href="#"><i class="fas fa-donate"></i>Interests</a></li>
-              <li><a href="#"><i class="far fa-file"></i>Resume</a></li>
-            </ul> 
-          </div>
-        </nav>
-      </header>
-
-            <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-            <script src="https://unpkg.com/react@15/dist/react.js"></script>
-            <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-            <script>
-              $(document).ready(function(){
-                $('.sidenav').sidenav();
-                $('.materialboxed').materialbox();
-                $('.parallax').parallax();
-                $('.tabs').tabs();
-                $('.datepicker').datepicker({
-                  disableWeekends: true
-                });
-                $('.tooltipped').tooltip();
-                $('.scrollspy').scrollSpy();
-              });
-            </script>
+              </div>
+            </li>
+            <li><a href="#"><i class="material-icons">work</i>Work Experience</a></li>
+            <li><a href="#"><i class="material-icons">lightbulb_outline</i>Skills</a></li>
+            <li><a href="#"><i class="fas fa-donate"></i>Interests</a></li>
+            <li><a href="#"><i class="far fa-file"></i>Resume</a></li>
+          </ul>
         </div>
-    </body>
+      </nav>
+    </header>
+    <!-- Work Experience -->
+    <section class="container section scrollspy">
+      <div class="row">
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/angular-springboot.png" alt="" />
+              <span class="card-title black-text">
+                <h4>Assistant System Engineer</h4>
+              </span>
+              <a href="" class="btn-floating pink halfway-fab pulse"><i class="material-icons">favorite</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Tata Consultancy Services</span>
+              <blockquote>Jan 2017 - Present</blockquote>
+              <ul class="collection">
+                <li class="collection-item">
+                  <p>
+                    UX Developer for a web-application written in Angular that manages ordering
+                    and supply chain management for a major retailer.
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <p>
+                    API endpoint development using SpringBoot.
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <p>
+                    Automation testing using custom built Selenium framework using Cucumber BDD startegy
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image">
+              <img height="auto" class="responsive-img" src="img/angular-springboot.png" alt="" />
+              <span class="card-title black-text">
+                <h4>Freelance Developer</h4>
+              </span>
+              <a href="" class="btn-floating pink halfway-fab pulse"><i class="material-icons">favorite</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Pro:Atria</span>
+              <blockquote>Jun 2017 - March 2017</blockquote>
+              <ul class="collection">
+                <li class="collection-item">
+                  <p>
+                    Python 2 to Python 3 code porting of modules from https://github.com/twisted/twisted
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <p>
+                    Introduced new algorithms for using SSH keys
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <p>
+                    All contributions - https://github.com/twisted/twisted/commits? author=acabhishek942
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col s12 l6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/angular-springboot.png" alt="" />
+                  <span class="card-title black-text">
+                    <h4>Assistant Researcher</h4>
+                  </span>
+                  <a href="" class="btn-floating pink halfway-fab pulse"><i class="material-icons">favorite</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Brno University of Technology</span>
+                  <blockquote>Jun 2015 - August 2015</blockquote>
+                  <ul class="collection">
+                    <li class="collection-item">
+                      <p>
+                        Worked on Hardware accelerated video decoding/encoding framework on GPUs
+                      </p>
+                    </li>
+                    <li class="collection-item">
+                      <p>
+                        Created framework that contains best performing methods for further processing on GPU/CPU
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 l6">
+              <div class="card">
+                <div class="card-image">
+                  <img height="auto" class="responsive-img" src="img/angular-springboot.png" alt="" />
+                  <span class="card-title black-text">
+                    <h4>Backend Developer - Intern</h4>
+                  </span>
+                  <a href="" class="btn-floating pink halfway-fab pulse"><i class="material-icons">favorite</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title">BGM Policy Innovations</span>
+                  <blockquote>Jun 2014 - Jul 2014</blockquote>
+                  <ul class="collection">
+                    <li class="collection-item">
+                      <p>
+                        Developed web application for documents archiving using Django/Python
+                      </p>
+                    </li>
+                    <li class="collection-item">
+                      <p>
+                        Performed Unit testing of HTML to LATEX converter and other in- house modules.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+          disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+    </div>
+  </body>
 </html>
